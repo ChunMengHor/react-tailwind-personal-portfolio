@@ -44,8 +44,8 @@ export const Navbar = () => {
                 </div>
 
                 {/* CTA Button */}
-                <div className="hidden md:block" 
-                    >
+                <div className="hidden md:block"
+                >
                     <Button size="sm">Contect Me</Button>
                 </div>
                 {/* Mobile menu button*/}
@@ -62,11 +62,11 @@ export const Navbar = () => {
                     {navLinks.map((link, index) => (
                         <a href={link.href}
                             key={index}
-                            onClick={() =>setisMobileMenuOpen(false)}
+                            onClick={() => setisMobileMenuOpen(false)}
                             className="text-muted-foreground text-lg hover:text-foreground py-2">
                             {link.label}</a>
                     ))}
-                    <Button onClick={() =>setisMobileMenuOpen(false)}> Contect Me</Button>
+                    <Button onClick={() => setisMobileMenuOpen(false)}> Contect Me</Button>
                 </div>
             </div>}
 
