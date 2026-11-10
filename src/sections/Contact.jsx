@@ -122,6 +122,8 @@ import {
                   </label>
                   <input
                     id="name"
+                    name="name"
+                    autoComplete="name"
                     type="text"
                     required
                     placeholder="Your name..."
@@ -142,6 +144,9 @@ import {
                     Email
                   </label>
                   <input
+                    name="email"
+                    autoComplete="email"
+                    id="email"
                     required
                     placeholder="your@email.com"
                     value={formData.email}
@@ -160,6 +165,7 @@ import {
                     Message
                   </label>
                   <textarea
+                    id="message"
                     rows={5}
                     required
                     value={formData.message}

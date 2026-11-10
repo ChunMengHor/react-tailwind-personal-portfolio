@@ -23,6 +23,10 @@ const socials = [
     { icon: FaTelegram, href: "https://t.me/+855884745997", label: "Telegram" },
 ];
 
+const scrollToContact = () => {
+    document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+  };
+
 export const Hero = () => {
 
 
@@ -85,12 +89,16 @@ export const Hero = () => {
                         </div>
                         {/* CTAs */}
                         <div className="flex  flex-wrap py-5 gap-5 animate-fade-in animation-delay-500 items-center ">
-                            <Button size="lg" className="cursor-pointer px-4 ">
+                           <a href="#contact">
+                            <Button size="lg" className="cursor-pointer px-4">
                                 Contact me  <ArrowRight className="w-5 h-5 " />
                             </Button>
+                            </a>
                             <AnimatedBorderButton className="">
                                 <Download className="w-5 h-5" />
-                                Download CV
+                                <a href="/cv/Chun-Menghor-CV.pdf" download="Chun-Menghor-CV.pdf">
+                                    Download CV
+                                </a>
                             </AnimatedBorderButton>
 
 

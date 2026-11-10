@@ -10,6 +10,7 @@ const navLinks = [
     { href: "#experience", label: "Experience" },
     { href: "#testimonials", label: "Testimonials" },
     { href: "#contact", label: "Contact" },
+
 ];
 
 export const Navbar = () => {
@@ -46,7 +47,9 @@ export const Navbar = () => {
                 {/* CTA Button */}
                 <div className="hidden md:block"
                 >
-                    <Button size="sm">Contect Me</Button>
+                    <a href="#contact">
+                    <Button size="sm">Contact Me</Button>
+                    </a>
                 </div>
                 {/* Mobile menu button*/}
                 <button className="md:hidden p-2 text-foreground cursor-pointer" onClick={() => setisMobileMenuOpen((prev) => !prev)} >
@@ -66,7 +69,9 @@ export const Navbar = () => {
                             className="text-muted-foreground text-lg hover:text-foreground py-2">
                             {link.label}</a>
                     ))}
+                    <a href="#contact">
                     <Button onClick={() => setisMobileMenuOpen(false)}> Contect Me</Button>
+                    </a>
                 </div>
             </div>}
 
